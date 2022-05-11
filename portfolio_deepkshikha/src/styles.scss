@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=BioRhyme:wght@400;700&display=swap');
+body {
+  margin: 0;
+  font-family: 'BioRhyme', serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background: url('./assets/sky.png');
+}
+*{
+  font-family: 'BioRhyme', serif;  
+}
+
+.navbar{
+  background-color: #fff;
+  color: #000;
+  padding: 0.5rem 1rem;
+  .navbar-brand >span:nth-child(1){
+    color: #FA00FF;
+    font-size: 1.5rem;
+    margin-right: 1rem;
+  }
+  .navbar-brand >span:nth-child(2){
+    font-size: 0.9rem;
+  }
+}
+
+.navbar-light .navbar-nav .nav-link {
+  color: rgba(0,0,0,1); 
+  font-weight: 700;
+  font-size: 0.9rem;
+  margin-left: 1rem;
+}
+.navbar-light .navbar-toggler-icon{
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(0,0,0,1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+.navbar-light .navbar-toggler{
+  color: black;
+  border: none;
+}
+
+// Media Queries
+@media only screen and (max-width: 992px)
+{
+
+  .navbar{
+    .navbar-brand >span:nth-child(2){
+      display: none;
+    }
+    background-color: rgba(0,0,0,0);
+  }
+  .navbar-nav{
+    width: 220px;
+    margin: 0 0 0 auto;
+    background: #FFFFFF;
+    /* Pink Shadow */
+    box-shadow: 0px 4px 4px rgba(251, 32, 255, 0.2);
+    
+  }
+  .navbar-light .navbar-nav .nav-link {
+    padding: 0.5rem 1rem;
+    right: 0;
+   
+    width: 220px;
+
+  }
+}
