@@ -1,13 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=BioRhyme:wght@400;700&display=swap');
+@import url('http://fonts.cdnfonts.com/css/rockwell-nova');
+                
 body {
   margin: 0;
   font-family: 'BioRhyme', serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   background: url('./assets/sky.png');
+  box-sizing: border-box;
 }
 *{
   font-family: 'BioRhyme', serif;  
+  box-sizing: border-box;
 }
 
 .navbar{
@@ -37,7 +41,108 @@ body {
   color: black;
   border: none;
 }
+// Footer
+.footer{
+  position: absolute;
+  bottom: 0;
+ // margin: 0.5rem 0;
+  width: 100%;
+  backdrop-filter: blur(40px);
+  display: flex;
+  align-items: center;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+}
+.contact{
+  background-color:  #FCFE9F;
+  border-radius: 50%;
+  padding: 0.5rem 2rem;
+  font-size: 1rem;
+  color: black;
+  margin: 0.5rem 0;
+}
 
+a{
+  text-decoration: none;
+}
+.footer-link{
+  color: white;
+  margin-left: 1rem;
+}
+.twitter>.iconify-inline{
+  color: #41a1f2;
+}
+.linkedin>.iconify-inline{
+  color: #0077b5;
+}
+.iconify-inline{
+  display: none;
+}
+// Home
+.blur-box, .thoughts-carousel{
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%); 
+}
+.blur-box{
+  background: rgba(252, 254, 159, 0.2);
+  backdrop-filter: blur(14px);
+  height: 400px;
+  width: 400px;
+  left: 0;
+  right: 0; 
+  margin: auto auto;
+}
+
+.thoughts-carousel{
+  position: absolute;
+  width: 300px;
+  left: 55%;
+}
+.carousel-img
+{
+  height: 250px;
+  width: 300px;
+}
+// carousel
+
+.carousel-container{
+  background-color: #fff;
+  padding: 0.5rem 1rem 1rem 1rem;
+  border: 1px solid black;
+  border-radius: 10px;
+  box-shadow: 0px 4px 24px rgba(250, 0, 255, 0.3);
+}
+
+.carousel-heading{
+  font-size: 0.8rem;
+  font-family: 'Rockwell Nova', sans-serif;
+}
+.carousel-control-prev{
+  display: none;
+}
+.carousel-control-next{
+  right: -60px;
+ 
+}
+.carousel-control-next-icon{
+  height: 30px;
+  width: 30px;
+  background: url('./assets/indicator.svg');
+  background-size: 30px 30px;
+}
+.carousel{
+  margin-top: 0.5rem;
+}
+.carousel-indicators [data-bs-target]
+{
+  height: 5px;
+  width: 5px;
+  border-radius: 50%;
+}
+.carousel-indicators{
+  bottom: -60px;
+}
 // Media Queries
 @media only screen and (max-width: 992px)
 {
@@ -59,8 +164,53 @@ body {
   .navbar-light .navbar-nav .nav-link {
     padding: 0.5rem 1rem;
     right: 0;
-   
     width: 220px;
 
+  }
+}
+
+@media only screen and (max-width: 786px)
+{
+  .iconify-inline{
+    display: inline;
+  }
+  .sm-text{
+    display: none;
+  }
+  .contact{
+    padding: 0.5rem 1rem;
+    font-size: 0.8rem;
+  }
+  .email{
+    font-size: 0.8rem;
+  }
+  .footer-link{
+    margin-left: 0.5rem;
+  }
+  .blur-box{
+    display: none;
+  }
+  .thoughts-carousel{
+    left: 0;
+  right: 0; 
+  margin: auto auto;
+  }
+
+}
+@media only screen and (max-width: 450px)
+{
+  .footer{
+    justify-content: center;
+  }
+  
+  .contact{
+    padding: 0.5rem 0.5rem;
+    font-size: 0.65rem;
+  }
+  .email{
+    font-size: 0.65rem;
+  }
+  .resume{
+    margin-left: 0;
   }
 }
