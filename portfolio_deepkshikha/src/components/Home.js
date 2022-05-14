@@ -1,8 +1,9 @@
 import Carousel from 'react-bootstrap/Carousel'
-import sky from './sky.png'
+import sky from '../assets/sky.png'
+import Footer from './Footer'
 function Home() {
     return (
-        <div>
+        <div className='home'>
             <div className="full-flex">
                 <div className="blur-box"></div>
                 <div className="thoughts-carousel">
@@ -38,6 +39,7 @@ function Home() {
             </div>
 
             </div>
+            <Footer></Footer>
         </div>
       );
 }

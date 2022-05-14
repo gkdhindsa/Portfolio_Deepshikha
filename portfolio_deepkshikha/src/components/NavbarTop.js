@@ -3,7 +3,7 @@ function NavbarTop() {
     return ( 
         <div>
         <Navbar collapseOnSelect expand="lg"  >
-        <Navbar.Brand href="#home" >
+        <Navbar.Brand href="/" >
             <span>
                Pegu Deepshikha
             </span>
