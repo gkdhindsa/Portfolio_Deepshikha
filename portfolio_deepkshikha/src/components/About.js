@@ -5,6 +5,7 @@ import pfp from '../assets/pfp.png'
 function About() {
     return (  
         <div>
+            <Container>
             <div className="navigation-bar mb-5">
                 <span>
                     <img src={back} alt="back" />
@@ -12,10 +13,9 @@ function About() {
                 <span className="back">Back</span>
                 <span className="divider">|</span>
                 <Breadcrumb>
-                <Breadcrumb.Item href="/" className='pink'>About</Breadcrumb.Item>
+                <Breadcrumb.Item href="/about" className='pink'>About</Breadcrumb.Item>
                 </Breadcrumb>
             </div>
-            <Container>
                     <Row>
                         <Col className='col-md-8 col-12'>
                             <Row>

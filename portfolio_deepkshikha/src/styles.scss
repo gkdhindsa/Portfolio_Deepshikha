@@ -6,7 +6,7 @@ body {
   font-family: 'BioRhyme', serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-
+  overflow-x: hidden;
   box-sizing: border-box;
 }
 *{
@@ -17,6 +17,7 @@ body {
   background: url('./assets/sky.png');
   width: 100%;
   height: 90vh;
+  background-size: 100% 100%;
 }
 
 .navbar{
@@ -160,7 +161,7 @@ a:hover{
   align-items: flex-start;
   width: 100%;
   height: 40px;
-  padding: 1rem 2rem;
+  padding: 1rem 0rem;
 }
 .divider{
   margin: 0 0.5rem;
@@ -307,19 +308,43 @@ p{
   position: relative;
   transform-style: preserve-3d;
   transition: all 0.8s ease;
-  border: 1px solid #000;
+  border: 1px solid black;
 }
+.card, .card-image-full, .front, .back{
+  border-radius: 10px;
+}
+
 .front, .back{
   position: absolute;
   height: 250px;
   width: 100%;
-  
-  //background-color: #fff;
+}
+
+.card-image-half{
+  width: 100%;
+  min-height: 250px;
+  border-radius: 10px 10px 0 0;
 }
 .card-image-full{
   width: 100%;
   height: 100%;
   object-fit: cover;
+}
+.card-title{
+  font-weight: 700;
+  font-size: 1.3rem;
+  margin-bottom: 1rem;
+}
+.view-more{
+  color: #FA00FF;
+  text-align: right;
+  float: right;
+}
+.back-body, .one-side{
+  padding: 1.5rem 2rem;
+}
+.card{
+  margin: 1.5rem 0;
 }
 
 .front{
@@ -335,6 +360,6 @@ p{
 }
 
 
-.card:hover{
+.card-flip:hover{
   transform: rotateY(180deg);
 }

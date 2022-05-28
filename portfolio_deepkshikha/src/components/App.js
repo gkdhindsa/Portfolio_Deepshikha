@@ -2,6 +2,7 @@ import React from 'react';
 import Home from './Home';
 import About from './About';
 import NavbarTop from './NavbarTop';
+import Project from './Project';
 import {
   BrowserRouter as Router,
   Route,
@@ -21,7 +22,7 @@ function App() {
         <Route exact path= "/about" element={<About/>}/>
         <Route exact path= "/thought" element={<Thought/>}/>
         <Route exact path= "/about" element={<About/>}/>
-        <Route exact path= "/about" element={<About/>}/>
+        <Route exact path= "/project" element={<Project/>}/>
        
       </Routes>
 

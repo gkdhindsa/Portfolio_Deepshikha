@@ -1,18 +1,18 @@
-import {Card } from 'react-bootstrap';
-
+import critical from '../assets/critical.png'
 function PictureCard() {
     return ( 
-        <Card>
-            <Card.Img variant="top" src={critical} />
-
-            <Card.Body>
-            <Card.Title>Project title</Card.Title>
-                <Card.Text>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat
-                </Card.Text>
-                
-            </Card.Body>
-        </Card>
+        <div className='card card-no-flip'>
+        <img src={critical} alt="" className='card-image-half'/>  
+        <div className="one-side">
+            
+                <p className="card-title">Project Title</p>
+                <p className="card-bod">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae, aspernatur. Nostrum, facilis? Pariatur libero, voluptatibus exercitationem accusamus laudantium, atque quo tempore quas expedita molestias ipsum. Nesciunt necessitatibus nulla incidunt sit!
+                </p>
+                <a href="" className='view-more'>View more</a>   
+        </div>
+            
+        </div>
      );
 }
 
