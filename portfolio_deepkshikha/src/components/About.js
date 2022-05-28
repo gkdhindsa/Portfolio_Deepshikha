@@ -10,7 +10,7 @@ function About() {
                 <span>
                     <img src={back} alt="back" />
                 </span>
-                <span className="back">Back</span>
+                <span className="back-text">Back</span>
                 <span className="divider">|</span>
                 <Breadcrumb>
                 <Breadcrumb.Item href="/about" className='pink'>About</Breadcrumb.Item>
