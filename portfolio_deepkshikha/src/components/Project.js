@@ -61,7 +61,7 @@ function Project() {
             <div className="project-subtitle">
              Gallery
             </div>
-            <Row className='mt-3 d-none d-lg-flex'>
+            <Row className='mt-3 d-none d-lg-flex px-0 ' style={{"margin-left": "0"}}>
                 <Col className="col-3">
                     <div className="gallery-picture">
                     <img src={forest} alt="" />

@@ -5,7 +5,7 @@ import pfp from '../assets/pfp.png'
 function About() {
     return (  
         <div>
-            <Container>
+            <Container style={{"margin-bottom":"150px"}}>
             <div className="navigation-bar mb-5">
                 <span>
                     <img src={back} alt="back" />

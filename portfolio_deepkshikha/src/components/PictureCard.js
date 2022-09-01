@@ -9,7 +9,7 @@ function PictureCard() {
                 <p className="card-bod">
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae, aspernatur. Nostrum, facilis? Pariatur libero, voluptatibus exercitationem accusamus laudantium, atque quo tempore quas expedita molestias ipsum. Nesciunt necessitatibus nulla incidunt sit!
                 </p>
-                <a href="" className='view-more'>View more</a>   
+                <a href="/project" className='view-more'>View more</a>   
         </div>
             
         </div>
